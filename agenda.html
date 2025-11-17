@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Agenda - Disaster Law Symposium</title>
+    <link rel="stylesheet" href="agenda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preload speaker headshots -->
+    <link rel="preload" as="image" href="SRC/Headshots/MaryAnn_Tierney_1.jpg">
+    <link rel="preload" as="image" href="SRC/Headshots/Sonja_Orgias.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="SRC/Screenshot 2025-09-04 161329.png" alt="Logo 1" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="register.html" class="nav-register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Agenda Section -->
+    <section id="agenda" class="agenda">
+        <div class="container">
+            <h2>Conference Agenda</h2>
+            <h3 style="text-align:center; color:#005A9C; margin-bottom:2rem;">Wednesday, November 5th, 2025</h3>
+            <div class="agenda-content">
+                <div class="schedule-item">
+                    <div class="time">9:00 - 9:30 AM</div>
+                    <div class="session">
+                        <h4>Complimentary Breakfast and Registration</h4>
+                        <p>Welcome coffee and registration check-in</p>
+                        <span class="location">Location: 205 State St</span>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">9:30 - 9:45 AM</div>
+                    <div class="session">
+                        <h4>Welcome and Opening Remarks</h4>
+                        <p>Opening address and symposium overview</p>
+                        <span class="speaker clickable-speaker" data-speaker="counsel">Sonja Orgias, Esq. - Chief Counsel, NYCEM</span>
+                        <span class="location">Location: 205 State St</span>
+                    </div>
+                </div>
+                
+                <div class="schedule-item parallel-session">
+                    <div class="time">10:00 - 11:45 AM</div>
+                    <div class="parallel-panels">
+                        <div class="panel-session">
+                            <h4 class="clickable-course" data-course="disabilities-course">Accommodating People with Invisible Disabilities</h4>
+                            <p>Addressing the needs of individuals with invisible disabilities in emergency planning, disaster response, and legal protections</p>
+                            <button class="view-panel-btn" data-panel="disabilities-panel">View Panel</button>
+                            <span class="location">Location: 205 State Street</span>
+                        </div>
+                        <div class="panel-session">
+                            <h4 class="clickable-course" data-course="foil-course">Freedom of Information Law in and after Emergencies</h4>
+                            <p>Freedom of Information Law applications in disaster situations, government transparency, and public access to emergency management information</p>
+                            <button class="view-panel-btn" data-panel="foil-panel">View Panel</button>
+                            <span class="location">Location: 250 Joralemon Street</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">12:00 - 12:45 PM</div>
+                    <div class="session">
+                        <h4>Keynote Address</h4>
+                        <p>Keynote presentation on disaster law and emergency management</p>
+                        <span class="speaker clickable-speaker" data-speaker="keynote">MaryAnn Tierney - Former Regional Administrator, FEMA Region 3</span>
+                        <span class="location">Location: Brooklyn Law School</span>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">12:45 - 1:45 PM</div>
+                    <div class="session">
+                        <h4>Complimentary Lunch</h4>
+                        <p>Networking lunch and refreshments</p>
+                        <span class="location">Location: 205 State St</span>
+                    </div>
+                </div>
+                
+                <div class="schedule-item parallel-session">
+                    <div class="time">2:15 - 3:45 PM</div>
+                    <div class="parallel-panels">
+                        <div class="panel-session">
+                            <h4 class="clickable-course" data-course="ethics-course">Ethics on the Edge: The Evolution of Legal Practice during Disasters Under the Collapse of Federal Emergency Support</h4>
+                            <p>Examining ethical frameworks and professional responsibility in disaster law, including attorney ethics, compliance issues, and ethical decision-making in emergency situations</p>
+                            <button class="view-panel-btn" data-panel="ethics-panel">View Panel</button>
+                            <span class="location">Location: 250 Joralemon Street</span>
+                        </div>
+                        <div class="panel-session">
+                            <h4 class="clickable-course" data-course="ai-course">Emergence of Artificial Intelligence in Emergency Response Operations: Considerations in Efficiency, Privacy, and Security </h4>
+                            <p>Exploring the intersection of artificial intelligence and disaster law, including privacy considerations, automated decision-making, and AI applications in emergency management</p>
+                            <button class="view-panel-btn" data-panel="ai-panel">View Panel</button>
+                            <span class="location">Location: 205 State Street</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">3:45 PM</div>
+                    <div class="session">
+                        <h4>Closing Remarks</h4>
+                        <p>Symposium wrap-up and next steps</p>
+                        <span class="speaker clickable-traci">Traci Wheelwright - Deputy Chief Counsel, NYC Emergency Management</span>
+                        <span class="location">Location: Brooklyn Law School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: legalsymposiuminfo@oem.nyc.gov</p>
+                    <p>Phone: 718-422-3008</p>
+                    <p>Address: 165 Cadman Plz E, Brooklyn, NY 11201</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="venue.html">Venue</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/nyc-emergency-management" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                        <a href="https://x.com/nycemergencymgt" target="_blank" rel="noopener noreferrer" class="social-link">X (Twitter)</a>
+                        <a href="https://www.nyc.gov/site/em/index.page" target="_blank" rel="noopener noreferrer" class="social-link">Official Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-notice">
+                <p>This event is free, open to the public and wheelchair accessible. ASL and CART will be provided. Additional accommodations can be requested upon registration.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; NYCEM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panel Modal -->
+    <div id="panelModal" class="modal">
+        <div class="modal-content panel-modal-content">
+            <span class="close">&times;</span>
+            <h3 id="panelModalTitle"></h3>
+            <div id="panelModalSpeakers" class="panel-speakers-grid">
+                <!-- Speaker cards will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Speaker Bio Modal -->
+    <div id="speakerBioModal" class="modal">
+        <div class="modal-content speaker-modal-content">
+            <span class="close speaker-modal-close">&times;</span>
+            <div class="speaker-modal-info">
+                <div class="speaker-modal-photo">
+                    <!-- Speaker photo will be inserted here -->
+                </div>
+                <div class="speaker-modal-details">
+                    <h3 id="speakerBioName"></h3>
+                    <p id="speakerBioTitle"></p>
+                    <p id="speakerBioOrganization"></p>
+                    <div id="speakerBioText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speaker Modal -->
+    <div id="speakerModal" class="modal">
+        <div class="modal-content speaker-modal-content">
+            <span class="close speaker-modal-close">&times;</span>
+            <div class="speaker-modal-info">
+                <div class="speaker-modal-photo">
+                    <!-- Speaker photo will be inserted here -->
+                </div>
+                <div class="speaker-modal-details">
+                    <h3 id="modalSpeakerName"></h3>
+                    <p id="modalSpeakerTitle"></p>
+                    <p id="modalSpeakerOrganization"></p>
+                    <div id="modalSpeakerBio"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Information Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content course-modal-content">
+            <span class="close">&times;</span>
+            <h3 id="courseModalTitle"></h3>
+            <div id="courseModalContent"></div>
+        </div>
+    </div>
+
+    <script src="agenda.js"></script>
+</body>
+</html> 
