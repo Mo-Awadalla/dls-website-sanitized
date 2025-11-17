@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title> Disaster Law Symposium </title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Preload critical images - Hero image gets highest priority -->
+    <link rel="preload" as="image" href="SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="SRC/Headshots/MaryAnn_Tierney_1.jpg">
+    <link rel="preload" as="image" href="SRC/Headshots/Sonja_Orgias.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="SRC/Screenshot 2025-09-04 161329.png" alt="Logo 1" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Hidden hero image for priority loading -->
+        <img src="SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg" 
+             alt="Disaster Law Symposium Hero" 
+             style="display: none;" 
+             fetchpriority="high" 
+             loading="eager">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-title">
+                    <h1>New York City Emergency Management Presents:</h1>
+                    <h2 class="hero-subtitle">Disaster Law Symposium</h2>
+                </div>
+                <div class="hero-theme-title">
+                    <div class="theme-accent-line"></div>
+                    <p class="theme-text"><span class="theme-kicker">Law in Crisis:</span> <span class="theme-rest">Building Capacity, Compliance, and Community in Emergency Management</span></p>
+                    <div class="theme-accent-line"></div>
+                </div>
+                <div class="hero-details">
+                    <div class="detail-item">
+                        <span style="color: white; font-weight: bold;">Wednesday, November 5th, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span style="color: white; font-weight: bold;">Brooklyn Law School</span>
+                    </div>
+                </div>
+                <div class="hero-register">
+                    <a href="register.html" class="btn-primary" style="text-decoration: none; display: inline-block;">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-info-column-full">
+                    <h2>About the Symposium</h2>
+                    <p class="section-subtitle">In an era of increasingly complex emergencies—ranging from climate-driven disasters to public health crises and cyber threats—legal preparedness is essential to effective emergency management. The Disaster Law Symposium, hosted by NYCEM, is a timely initiative convening legal and policy professionals to examine legal frameworks, ethical questions, and interagency coordination challenges that arise during crises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Speakers Section -->
+    <section id="featured-speakers" class="featured-speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Speakers</h2>
+                <p class="section-subtitle">The Disaster Law Symposium will highlight an inspiring group of keynote speakers, facilitators, and panelists whose dedication to public service and legal excellence sets a powerful example. Their voices will not only guide important conversations but also ignite a vision for stronger, more resilient communities prepared to meet the challenges of tomorrow.</p>
+            </div>
+            
+            <div class="featured-speakers-grid">
+                <!-- Keynote Speaker -->
+                <div class="featured-speaker-card keynote-card">
+                    <div class="featured-speaker-content">
+                        <div class="featured-speaker-image">
+                            <img src="SRC/Headshots/MaryAnn_Tierney_1.jpg" alt="MaryAnn Tierney" class="speaker-img" loading="eager" decoding="async">
+                        </div>
+                        <div class="featured-speaker-info">
+                            <h3 class="featured-speaker-name">MaryAnn Tierney</h3>
+                            <p class="featured-speaker-title">Keynote Speaker</p>
+                            <p class="featured-speaker-organization">Former Regional Administrator, FEMA Region 3</p>
+                            <button class="speaker-bio-btn" data-speaker="keynote">View Bio</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chief Counsel -->
+                <div class="featured-speaker-card counsel-card">
+                    <div class="featured-speaker-content">
+                        <div class="featured-speaker-image">
+                            <img src="SRC/Headshots/Sonja_Orgias.jpg" alt="Sonja Orgias" class="speaker-img" loading="eager" decoding="async">
+                        </div>
+                        <div class="featured-speaker-info">
+                            <h3 class="featured-speaker-name">Sonja Orgias, Esq.</h3>
+                            <p class="featured-speaker-title">Chief Counsel</p>
+                            <p class="featured-speaker-organization">New York City Emergency Management</p>
+                            <button class="speaker-bio-btn" data-speaker="counsel">View Bio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: legalsymposiuminfo@oem.nyc.gov</p>
+                    <p>Phone: 718-422-3008</p>
+                    <p>Address: 165 Cadman Plz E, Brooklyn, NY 11201</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="venue.html">Venue</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/nyc-emergency-management" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                        <a href="https://x.com/nycemergencymgt" target="_blank" rel="noopener noreferrer" class="social-link">X (Twitter)</a>
+                        <a href="https://www.nyc.gov/site/em/index.page" target="_blank" rel="noopener noreferrer" class="social-link">Official Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-notice">
+                <p>This event is free, open to the public and wheelchair accessible. ASL and CART will be provided. Additional accommodations can be requested upon registration.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; NYCEM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Speaker Bio Modal -->
+    <div id="speakerModal" class="modal">
+        <div class="modal-content speaker-modal-content">
+            <span class="close speaker-modal-close">&times;</span>
+            <div class="speaker-modal-info">
+                <div class="speaker-modal-photo">
+                    <!-- Speaker photo will be inserted here -->
+                </div>
+                <div class="speaker-modal-details">
+                    <h3 id="modalSpeakerName"></h3>
+                    <p id="modalSpeakerTitle"></p>
+                    <p id="modalSpeakerOrganization"></p>
+                    <div id="modalSpeakerBio"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
