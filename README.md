@@ -4,67 +4,94 @@ A multi-page website for the Disaster Law Symposium conference, featuring a mode
 
 ## Website Structure
 
-The website is divided into 4 main pages:
+The website is divided into 5 main pages:
 
 ### 1. Home Page (`index.html`)
 - **Hero Section**: Main conference banner with title, subtitle, date, venue, and registration button
-- **About Section**: Conference overview with statistics (attendees, speakers, sessions)
+- **About Section**: Conference overview and description
+- **Featured Speakers**: Keynote speaker and chief counsel information with bio modals
 - **Navigation**: Links to all other pages
-- **Footer**: Contact information and quick links
+- **Footer**: General information and navigation
 
 ### 2. Agenda Page (`agenda.html`)
-- **Conference Schedule**: Three-day agenda with tabbed navigation
+- **Conference Schedule**: Single-day agenda with session details
 - **Session Details**: Time, title, description, and speaker information for each session
-- **Interactive Tabs**: Switch between different days of the conference
+- **Panel Modals**: Interactive panels with speaker information
+- **Course Information**: CLE course details and objectives
 
 ### 3. Venue Page (`venue.html`)
-- **Venue Information**: Brooklyn Law School details
+- **Venue Information**: Conference venue details
 - **Getting There**: Transportation and accessibility information
-- **Accommodations**: Hotel information
+- **Accommodations**: Hotel information and booking options
 - **Interactive Map**: Embedded Google Maps showing the venue location
 
-### 4. Contact & Registration Page (`contact.html`)
-- **Registration Section**: Three pricing tiers (Early Bird, Standard, Late Registration)
-- **Contact Form**: Contact information and message form
-- **Registration Modal**: Popup form for conference registration
-- **Contact Details**: Email, phone, and address information
+### 4. Sponsors Page (`sponsors.html`)
+- **Sponsor Information**: List of supporting organizations and sponsors
+- **Sponsor Cards**: Display of sponsor names and descriptions
+
+### 5. Registration Page (`register.html`)
+- **Registration Status**: Registration information and status
+- **Contact Information**: General contact details
 
 ## Features
 
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Modern UI**: Clean, professional design with smooth animations
 - **Interactive Elements**: 
-  - Tabbed agenda navigation
-  - Registration modal with form validation
-  - Contact form with validation
+  - Speaker bio modals
+  - Panel information modals
+  - Course information modals
   - Mobile-friendly navigation menu
 - **Accessibility**: Keyboard navigation and screen reader friendly
 - **Cross-browser Compatible**: Works on all modern browsers
 
 ## Files
 
+### HTML Files
 - `index.html` - Home page
 - `agenda.html` - Agenda page
 - `venue.html` - Venue page
-- `contact.html` - Contact and registration page
-- `style.css` - All styling and responsive design
-- `script.js` - JavaScript functionality and interactions
-- `Images/` - Directory for website images (NYCEM logo, poster, etc.)
+- `sponsors.html` - Sponsors page
+- `register.html` - Registration page
+
+### CSS Files
+- `index.css` - Home page styling
+- `agenda.css` - Agenda page styling
+- `venue.css` - Venue page styling
+- `sponsors.css` - Sponsors page styling
+- `register.css` - Registration page styling
+- `style.css` - Additional shared styles
+
+### JavaScript Files
+- `index.js` - Home page functionality and speaker modals
+- `agenda.js` - Agenda page functionality, panel modals, and course information
+- `venue.js` - Venue page functionality
+- `sponsors.js` - Sponsors page functionality
+- `register.js` - Registration page functionality
+- `script.js` - Additional shared scripts
+
+### Assets
+- `SRC/` - Directory for website images and assets
+  - Hero background image
+  - Logo images
+  - Placeholder headshot image
 
 ## Setup
 
 1. Ensure all files are in the same directory
-2. Create an `Images` folder and add:
-   - `NYCEM_LOGO_black.png` - Organization logo
-   - `RawPoster.PNG` - Hero background image
+2. The `SRC/` folder should contain:
+   - Hero background image
+   - Logo images
+   - Placeholder headshot image (`PH_HS.png`)
 3. Open `index.html` in a web browser to view the website
 
 ## Customization
 
-- **Colors**: Update the CSS variables in `style.css` to change the color scheme
+- **Colors**: Update the CSS variables in the respective CSS files to change the color scheme
 - **Content**: Edit the HTML files to update conference information
-- **Images**: Replace images in the `Images` folder with your own
-- **Contact Information**: Update email, phone, and address in the contact sections
+- **Images**: Replace images in the `SRC/` folder with your own
+- **Contact Information**: Update email, phone, and address in the footer sections
+- **Speaker Information**: Update speaker data in `index.js` and `agenda.js`
 
 ## Browser Support
 
@@ -76,6 +103,8 @@ The website is divided into 4 main pages:
 
 ## Notes
 
-- The registration and contact forms currently log data to the console - in a real implementation, these would connect to a backend server
+- Speaker information uses placeholder data - update speaker names, bios, and images in `index.js` and `agenda.js`
+- Contact information uses placeholder values - update with actual contact details
 - The Google Maps embed uses a placeholder URL - replace with the actual venue coordinates
-- Social media links are placeholder URLs - update with actual social media profiles 
+- All external links have been removed for privacy
+- Sponsor logos have been removed - add sponsor logos as needed 
